@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Part6Lesson2 {
     public static void main(String[] args) {
 
-        //Given
+        // 2.8Given
         //you have a circle with radius 5:
         //
         //Display a menu in console
