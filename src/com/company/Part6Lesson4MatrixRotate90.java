@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-public class Part6Lesson4MatrixRotate {
+public class Part6Lesson4MatrixRotate90 {
 
     //4.7
     //Create matrix with dimensions 10x15
@@ -40,16 +40,16 @@ public class Part6Lesson4MatrixRotate {
         }
     }
 
-    static void rotate90Clockwise(int a[][]) {
+    static void rotate90Clockwise(int num[][]) {
 
         for (int i = 0; i < N / 2; i++) {
             for (int j = i; j < N - i - 1; j++) {
 
-                int temp = a[i][j];
-                a[i][j] = a[N - 1 - j][i];
-                a[N - 1 - j][i] = a[N - 1 - i][N - 1 - j];
-                a[N - 1 - i][N - 1 - j] = a[j][N - 1 - i];
-                a[j][N - 1 - i] = temp;
+                int temp = num[i][j];
+                num[i][j] = num[N - 1 - j][i];
+                num[N - 1 - j][i] = num[N - 1 - i][N - 1 - j];
+                num[N - 1 - i][N - 1 - j] = num[j][N - 1 - i];
+                num[j][N - 1 - i] = temp;
             }
         }
     }
